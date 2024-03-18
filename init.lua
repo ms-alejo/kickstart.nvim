@@ -98,6 +98,14 @@ vim.g.have_nerd_font = false
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+--Set up powershell
+vim.o.shell = 'powershell.exe'
+vim.o.shellxquote = ''
+vim.o.shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command '
+vim.o.shellquote = ''
+vim.o.shellpipe = '| Out-File -Encoding UTF8 %s'
+vim.o.shellredir = '| Out-File -Encoding UTF8 %s'
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
