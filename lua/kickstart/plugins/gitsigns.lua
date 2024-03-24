@@ -1,0 +1,1 @@
+-- Git related signs to the gutter and utilities for managing changes
